@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>  
+<html style="background-color:#CFD2B2">  
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="portfolio.ico" />
+</head>
+
+
+<table style="background-color:#CFD2B2" rows="2" columns="4" cellpadding="30" cellspacing="50">
+<body>
+
+  
+<!-- generate top --> 
+  <tr>
+  	<td valign="top">
+    	<div>
+         <button id = "button" onclick = "Randomizing()"> 
+          Generate Top
+    	 </button>
+         <p id = "unknown">  
+    	</p> 
+       </div>
+   </td>
+
+<!-- generate color --> 
+  	<td valign="top">
+    	<div>
+         <button id = "button2" onclick = "Randomizing2()">  
+          Generate Color
+    	 </button>
+         <p id = "unknown2">  
+    	</p> 
+       </div>
+   </td>
+   
+<!-- generate hair accessories -->
+  	<td valign="top">
+    	<div>
+         <button id = "button3" onclick = "Randomizing3()" style="font-size:40px;">  
+          Generate Hair Accessories
+    	 </button>
+         <p id = "unknown3">  
+    	</p> 
+       </div>
+   </td>
+ 
+ <!-- generate accessories-->
+  	<td valign="top">
+    	<div>
+         <button id = "button4" onclick = "Randomizing4()">  
+          Generate Accessories
+    	 </button>
+         <p id = "unknown4">  
+    	</p> 
+       </div>
+   </td>
+ </tr>
+ 
+<!-- generate footwear -->
+  <tr>
+  	<td valign="top">
+    	<div>
+         <button id = "button5" onclick = "Randomizing5()">  
+          Generate Footwear
+    	 </button>
+         <p id = "unknown5">  
+    	</p> 
+       </div>
+   </td>
+    
+ <!-- generate bottoms -->
+  	<td valign="top">
+    	<div>
+         <button id = "button6" onclick = "Randomizing6()">  
+          Generate Bottoms
+    	 </button>
+         <p id = "unknown6">  
+    	</p> 
+       </div>
+   </td>
+    
+<!-- generate socks -->
+  	<td valign="top">
+    	<div>
+         <button id = "button7" onclick = "Randomizing7()">  
+          Generate Socks
+    	 </button>
+         <p id = "unknown7">  
+    	</p> 
+       </div>
+   </td>
+ 
+<!-- generate jacket -->
+  	<td valign="top">
+    	<div>
+         <button id = "button8" onclick = "Randomizing8()">  
+          Generate Jacket
+    	 </button>
+         <p id = "unknown8">  
+    	</p> 
+       </div>
+   </td>
+   
+ </tr>
+ 
+ <style>
+    button {
+        border-radius: 10%;
+        padding-bottom: 30px;
+        height: 100px;
+        width: 250px;
+        font-size: 50px;
+        color: black;
+        background-color: #EFF0E5;
+        box-shadow: 10px -10px 0 rgba(0, 0, 0, 0.4);
+        font-family: myFirstFont;
+        border: none;
+        padding-top: 20px;
+        margin: auto;
+        display: block;
+    }
+
+    td p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #EFF0E5;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    td {
+        height: 30vh;
+        padding-top: 100px;
+    }
+
+    table {
+        height: 100vh;
+        width: 98vw;
+        justify-content: center;
+        border-collapse: collapse;
+    }
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url(CANDY___.otf);
+    }
+
+    @font-face {
+        font-family: titleFont;
+        src: url(SketchMeFreeVersion-qxyl.ttf);
+    }
+ </style>
+
+    <script>    
+        var unknown = document.getElementById('unknown'); 
+        var unknown2 = document.getElementById('unknown2');  
+        var unknown3 = document.getElementById('unknown3'); 
+        var unknown4 = document.getElementById('unknown4');
+        var unknown5 = document.getElementById('unknown5');
+        var unknown6 = document.getElementById('unknown6');
+        var unknown7 = document.getElementById('unknown7');
+        var unknown8 = document.getElementById('unknown8');
+
+          
+          
+          
+        var arr = ["t-shirt",
+    			   "cropped",
+                   "sweater",
+                   "sweatshirt",
+                   "long sleeve",
+                   "mid sleeve",
+                   "off the shoulder",
+                   "corset",
+                   "bodysuit",
+                   "swimsuit",
+                   "turtleneck",
+                   "tank",
+                   "blouse",
+                   "tie",
+                   "w/ rusching",
+                   "w/ buttons",
+                   "w/ criss cross",
+                   "w/ tie dye",
+                   "sundress",
+                   "romper",
+                   "halter dress",
+                   "A-line dress",
+                   "teacup dress",
+                   "midi dress",
+                   "mini dress",
+                   "maxi dress",
+                   "wrap dress",
+                   "high-low dress",
+                   "sheath dress",
+                   "peplum dress",
+                   "shirt dress",
+                   "slip dress",
+                   "smock dress",
+                   "mermaid dress",
+                   "t-shirt dress",
+                   "cocktail dress",
+                   "pinafore dress",
+                   "bardot dress",
+                   "bellsleeve dress",
+                   "blazer dress",
+                   "empire waist dress",
+                   "princess silhouette dress",
+                   "collar",
+                   "ruffled front",
+                   "preppy",
+                   "tunic",
+                   "crewneck",
+                   "henley",
+                   "floral"]; 
+                   
+        var arr2 = ["red", 
+        		   "scarlet", 
+                   "orange", 
+                   "gold", 
+                   "yellow", 
+                   "blue-green", 
+                   "teal",
+                   "turquoise",
+                   "kiwi",
+                   "pine-green",
+                   "sea foam",
+                   "blue",
+                   "sky",
+                   "azure",
+                   "plum",
+                   "indigo",
+                   "violet",
+                   "pink",
+                   "coral",
+                   "magenta",
+                   "maroon",
+                   "carnation",
+                   "brown",
+                   "black",
+                   "gray",
+                   "purple",
+                   "silver",
+                   "copper",
+                   "bronze",
+                   "ginger",
+                   "pumpkin",
+                   "cherry",
+                   "mint",
+                   "buttercream",
+                   "kelly green",
+                   "emerald",
+                   "primrose yellow",
+                   "pale dogwood",
+                   "hazelnut",
+                   "island paradise",
+                   "greenery",
+                   "flame",
+                   "pink yarrow",
+                   "niagara",
+                   "kale",
+                   "lapis",
+                   "amethyst",
+                   "mustard",
+                   "strawberry",
+                   "chicory coffee",
+                   "abundant green",
+                   "dragon fire",
+                   "water spout",
+                   "meadow violet",
+                   "blueberry",
+                   "navy",
+                   "molten lava",
+                   "cardamom seed",
+                   "lichen blue",
+                   "peach caramel",
+                   "tapioca",
+                   "quiet shade",
+                   "iced coffee"];
+                   
+       var arr3 = ["clip",
+                   "butterfly clips",
+                   "barrettes",
+                   "scrunchie",
+                   "hair tie",
+                   "headband",
+                   "bobby pins",
+                   "ribbon",
+                   "bandana",
+                   "side comb",
+                   "flower crown",
+                   "banana clips"]; 
+                   
+       var arr4 = ["handbag",
+                   "glasses/shades",
+                   "bucket hat",
+                   "baseball cap",
+                   "beanie",
+                   "beret",
+                   "fedora",
+                   "necklace",
+                   "bracelet",
+                   "anklet",
+                   "pins",
+                   "earrings",
+                   "rings"];
+                   
+       var arr5 = ["sneakers",
+                   "slippers",
+                   "flats",
+                   "rainboots",
+                   "brogue",
+                   "crocs",
+                   "loafers",
+                   "clogs",
+                   "espadrilles",
+                   "flip-flops",
+                   "sandals",
+                   "oxford",
+                   "heels",
+                   "monk strap",
+                   "platforms",
+                   "slingbacks",
+                   "ankle boots",
+                   "cowboy boots",
+                   "hiking boots",
+                   "combat boots",
+                   "knee-high boots",
+                   "wellington boots",
+                   "earth",
+                   "galoshes",
+                   "huaraches",
+                   "moccasins",
+                   "riding",
+                   "russian",
+                   "snow",
+                   "uggs",
+                   "saddle",
+                   "calf",
+                   "water",
+                   "gladiators",
+                   "chunky",
+                   "mules",
+                   "slip on",
+                   "docksides",
+                   "wedge",
+                   "chelsea boots",
+                   "desert boots",
+                   "monks",
+                   "derby",
+                   "lita boots",
+                   "army boots",
+                   "court",
+                   "jelly",
+                   "mary janes",
+                   "worishofer sandals",
+                   "boat",
+                   "blucher",
+                   "brogan",
+                   "brothel creeper",
+                   "buck",
+                   "buckled",
+                   "chukka boots",
+                   "motorcycle boots",
+                   "spectator",
+                   "winklepickers",
+                   "work boots",
+                   "budapester"];
+                   
+       var arr6 = ["jeans",
+                   "overalls",
+                   "dungarees",
+                   "trousers",
+                   "waders",
+                   "hiking",
+                   "track",
+                   "leggings",
+                   "flare",
+                   "pajama",
+                   "rain",
+                   "snow",
+                   "hammer",
+                   "fisherman",
+                   "painter",
+                   "stirrups",
+                   "straight",
+                   "bush",
+                   "capris",
+                   "cigarette/narrow",
+                   "disco",
+                   "high rise",
+                   "hip huggers",
+                   "jumpsuit",
+                   "jeggings",
+                   "palazzo",
+                   "pedal pushers",
+                   "peg",
+                   "yoga",
+                   "bell bottoms",
+                   "joggers",
+                   "breeches",
+                   "cargo",
+                   "carpenter",
+                   "chinos",
+                   "khakis",
+                   "corduroy",
+                   "pleated",
+                   "knickers",
+                   "plus fours",
+                   "tobi",
+                   "running",
+                   "gym",
+                   "patterned",
+                   "linen",
+                   "printed",
+                   "bermuda",
+                   "wrap",
+                   "slipshort",
+                   "low rise",
+                   "culotte",
+                   "lace",
+                   "dolphin",
+                   "frayed",
+                   "pom-pom",
+                   "ruffle",
+                   "scalloped",
+                   "tassel"];
+                   
+                                      
+       var arr7 = ["tights",
+                   "leg warmer",
+                   "liner",
+                   "slipper",
+                   "ankle",
+                   "knee",
+                   "fun"];
+                   
+       var arr8 = ["cardigan",
+                   "winter",
+                   "light",
+                   "bolero",
+                   "vest",
+                   "blazer",
+                   "cropped",
+                   "peplum",
+                   "swing coat",
+                   "wrap",
+                   "spencer",
+                   "bomber",
+                   "chore coat",
+                   "eisenhower",
+                   "field",
+                   "flak",
+                   "hacking",
+                   "harrington",
+                   "military",
+                   "motorcycle",
+                   "leather",
+                   "norfolk",
+                   "peacoat",
+                   "windbreaker",
+                   "varsity",
+                   "sports",
+                   "warmus"];
+          
+          
+          
+        function Randomizing() { 
+            unknown.innerHTML =  
+                arr[Math.floor(Math.random() * arr.length)]; 
+              
+        }
+        
+        function Randomizing2() { 
+            unknown2.innerHTML =  
+                arr2[Math.floor(Math.random() * arr2.length)];          
+              
+        }
+        
+        function Randomizing3() { 
+            unknown3.innerHTML =  
+                arr3[Math.floor(Math.random() * arr3.length)]; 
+
+        }
+        
+        function Randomizing4() { 
+            unknown4.innerHTML =  
+                arr4[Math.floor(Math.random() * arr4.length)]; 
+        
+        }
+        
+        function Randomizing5() { 
+            unknown5.innerHTML =  
+                arr5[Math.floor(Math.random() * arr5.length)]; 
+        
+        }
+        
+        function Randomizing6() { 
+            unknown6.innerHTML =  
+                arr6[Math.floor(Math.random() * arr6.length)]; 
+            
+        }
+        
+        function Randomizing7() { 
+            unknown7.innerHTML =  
+                arr7[Math.floor(Math.random() * arr7.length)]; 
+           
+        }
+        
+        function Randomizing8() { 
+            unknown8.innerHTML =  
+                arr8[Math.floor(Math.random() * arr8.length)]; 
+
+        }
+        
+        
+        
+       
+        
+      var count = 0;
+      var button = document.getElementById("button");
+      
+      var count2 = 0;
+      var button2 = document.getElementById("button2");
+      
+      var count3 = 0;
+      var button3 = document.getElementById("button3");
+
+ 	  var count4 = 0;
+      var button4 = document.getElementById("button4");
+      
+      var count5 = 0;
+      var button5 = document.getElementById("button5");
+      
+      var count6 = 0;
+      var button6 = document.getElementById("button6");
+      
+      var count7 = 0;
+      var button7 = document.getElementById("button7");
+      
+      var count8 = 0;
+      var button8 = document.getElementById("button8");
+
+
+
+    </script> 
+</body>
+  </table>
+  
+ 
+  
+</html> 
+
+
+
+
+
+

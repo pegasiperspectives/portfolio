@@ -1,0 +1,220 @@
+<style>
+
+    h1 {text-align: center; color: #adebeb; font-family: Parkavenue, cursive; font-size: 50px;}
+    
+    img {
+      border-radius: 200px;
+      border: 10px solid #adebeb;
+      }
+    
+    .slidecontainer {
+      width: 100%;
+      text-align: left;
+    }
+    
+    .slidecontainer2 {
+      width: 100%;
+      text-align: left;
+    }
+    
+    .slider {
+      -webkit-appearance: none;
+      align-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background: #d6fff6;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .slider:hover {
+      opacity: 1;
+    }
+    
+    .slider::-webkit-range-thumb {
+      -webkit-appearance: none;
+      width: 25;
+      height: 25;
+      border-radius: 50%;
+      background: #4CAF50;
+      cursor: pointer;
+      color: #ffffff;
+    }
+    
+    
+    </style>
+    
+    <HTML>
+    
+    <body style= "background-color:#45ad9c">
+    <br>
+    <h1>Worldbuilding Sliders</h1>
+    
+    <table border="3px">
+    
+      
+      <tr>
+      
+          <td style="padding-right: 20px; padding-left: 20px;"></td>
+        
+        <td style="padding-right: 20px; padding-left: 20px;">
+            <div class="slidecontainer">
+            <div class="slidecontainer" id="image"></div>  
+            <br>
+    
+    
+       <td style="padding-right: 20px; padding-left: 20px;">
+               <div class="slidecontainer2">
+            <div class="slidecontainer2" id="image2"></div>  
+            <br>
+    
+    </tr>    
+        
+      
+      <tr>
+      
+          <td></td>
+        
+        <td style="text-align: center; color: #adebeb; font-family: Parkavenue, cursive; font-size: 20px;" id="demo">Biome: <span text-align="center" id="demo"></span></td>
+      
+          <td style="text-align: center; color: #adebeb; font-family: Parkavenue, cursive; font-size: 20px;" id="land">Landmass: <span text-align="center" id="land"></span></td>
+          
+      </tr>
+      
+      <tr>
+          <td></td>
+        <td style="padding-right: 80px; padding-left: 100px;">
+        <input type="range" min="0" max="14" value="7" class="slider" id="myRange">
+        </td>
+        
+        <td style="padding-right: 80px; padding-left: 100px;">
+        <input type="range" min="0" max="7" value="3" class="slider" id="myRange2">
+        </td>
+      </tr>
+    
+    </table>
+    </HTML>
+    
+    <script>
+    
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    var pic = document.getElementById("image");
+    var text = slider.value;
+    
+    var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("land");
+    var pic2 = document.getElementById("image2");
+    var mass = slider2.value;
+    
+    slider.oninput = function() {
+        text = this.value;
+        if (text == 0) {
+            output.innerHTML = "Biome: Tropical Rainforest";
+               pic.innerHTML = "<img src= \"https://tinyurl.com/3eetm337\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (text == 1) {
+            output.innerHTML = "Biome: Temperate Forest";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/wb2dr6ry\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (text == 2) {
+            output.innerHTML = "Biome: Desert";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/jdwnd8wf\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (text == 3) {
+            output.innerHTML = "Biome: Tundra";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/yjxnhnb7\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 4) {
+            output.innerHTML = "Biome: Taiga";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/2xwt7zwp\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 5) {
+            output.innerHTML = "Biome: Grassland";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/3hwrdv9c\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 6) {
+            output.innerHTML = "Biome: Savanna";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/yynyykzu\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 7) {
+            output.innerHTML = "Biome: Freshwater";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/amursjm3\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 8) {
+            output.innerHTML = "Biome: Marine";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/4xphnutt\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 9) {
+            output.innerHTML = "Biome: Evergreen";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/ypw62544\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 10) {
+            output.innerHTML = "Biome: Rocky";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/t39ss74b\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 11) {
+            output.innerHTML = "Biome: Frost";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/actuav6b\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";      
+        }
+        if (text == 12) {
+            output.innerHTML = "Biome: Mountains";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/yjxnhnb7\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";    
+        }
+        if (text == 13) {
+            output.innerHTML = "Biome: Mesa";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/t39ss74b\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";            
+        }
+        if (text == 14) {
+            output.innerHTML = "Biome: Swamp";
+            pic.innerHTML = "<img src= \"https://tinyurl.com/ec3jmsp3\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";            
+        }
+    }
+    
+    slider2.oninput = function() {
+        mass = this.value;
+        if (mass == 0) {
+            output2.innerHTML = "Landmass: Skylands";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/p9faywn8\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 1) {
+            output2.innerHTML = "Landmass: Eastern Islands";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/9wyuwvha\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 2) {
+            output2.innerHTML = "Landmass: Southern Islands";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/25jfc6cv\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 3) {
+            output2.innerHTML = "Landmass: Northern Islands";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/ynyb64mt\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 4) {
+            output2.innerHTML = "Landmass: Eastern Continents";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/3xy7rsnt\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 5) {
+            output2.innerHTML = "Landmass: Western Islands";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/48fu3e9j\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 5) {
+            output2.innerHTML = "Landmass: Western Continents";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/3z4uw4uk\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 6) {
+            output2.innerHTML = "Landmass: Southern Continents";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/4tscnvwu\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+        if (mass == 7) {
+            output2.innerHTML = "Landmass: Northern Continents";
+               pic2.innerHTML = "<img src= \"https://tinyurl.com/69zu8vzm\" width=\'200px\' height=\'200px\' border-radius=\'300px'\>";
+        }
+     }
+        
+    </script>
+    
+    
+    
+    
