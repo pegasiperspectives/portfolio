@@ -1,249 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | cse2513dproject2</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">cse2513dproject2</div>
+      </div>
+    </div>
+    <script>
 
-<head>
-  <link rel="shortcut icon" type="image/x-icon" href="portfolio.ico" />
-</head>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
 
-<body>
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
 
-  <div class="topnav">
-    <a class="active" href="portfolio.html">⌂ home </a>
-    <a href="games.html"> ~games~ </a>
-    <a href="stories.html"> ~stories~ </a>
-    <a href="sketchbook.html"> ~sketchbook~ </a>
-  </div>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/portfolio.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/portfolio.data",
+        frameworkUrl: buildUrl + "/portfolio.framework.js",
+        codeUrl: buildUrl + "/portfolio.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "cse2513dproject2",
+        productVersion: "0.1",
+        showBanner: unityShowBanner,
+      };
 
-  <div>
-    <h1>TALIA OLIFF</h1>
-    <h2>coder, writer, & game designer.</h2>
-  </div>
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
 
-  <table>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
 
-    <tr>
-      <td>
-        <img class="imgL" src="miamigirl.jpg">
-      </td>
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
 
-      <td>
-        <p class="pR">Hi! My name is Talia Oliff!
-          I was born in late 2003 and was raised in Cincinnati, Ohio.
-          I have two younger siblings, both born in early 2007 (they're twins).
-          I am a Games + Simulation Major, Computer Science and Creative Writing Minors, and ET Leader at Miami University.
-          I'm very passionate about my major and am really looking forward to seeing all of its applications!
-          I love to create, whether that be visual art, code, or writing!
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p class="pL">I hope to one day be able to make games that can serve as an escape, enjoyment, as well as help
-          people.
-          I've loved making things all my life, writing stories for my siblings and holding onto my fourth grade daily
-          pages after all these years, this love eventually turning to coding and creating games. 
-          I've made sight word games for my mom's kindergarten class, 
-          games for pretty much every single one of my birthday parties,
-          and I've written stories consistently since second grade.
-        </p>
-      </td>
-
-      <td>
-        <img class="imgR" src="butterfly colors.jpg">
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <img class="imgL" src="meatsilks.jpg">
-      </td>
-
-      <td>
-        <p class="pR">In addition to games, I'm working on a fantasy series as well as some other stories and novels!
-          On top of academics, I participate in Hillel, a national Jewish organization at colleges, and am part of
-          aerial silks. I also attend other clubs regularly, inlcuding astronomy club and the student disability club!
-          I am very passionate about invisible disabilities and accessability
-          and hope to showcase that priority with my future games.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <p class="pL">In my free time, I work on my creative projects, spend time with friends and family, read,
-          watch shows, and/or try to get better at certain skills! Some interesting things about me include my love for swings,
-          the five years I spent working in a preK classroom, and that I'm currently in the process of learning ASL!
-        </p>
-      </td>
-
-      <td>
-        <img class="imgR" src="IMG_1183.jpg">
-      </td>
-    </tr>
-
-  </table>
-
-  <div class="contact">
-      <h3>Interested in contacting me?</h3>
-      <h4>► olifftj@miamioh.edu</h4>
-  </div>
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
 
 
-</body>
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+  </body>
 </html>
-
-<style>
-    
-  /* probably can't use a lot of these images due to copyright */
-
-  body {
-    background-color: #CACFD6;
-    width: 100%;
-    height: 175%;
-    margin: 0;
-    font-family: myFirstFont;
-    background-color: #CACFD6;
-    background-image: url("scrapbookbackground.png");
-    background-blend-mode: soft-light;
-    background-size:contain;
-  }
-
-  h1 {
-    font-size: 150px;
-    text-align: center;
-    padding: 150px 100px 0px 100px;
-    font-family: titleFont;
-    margin: 0;
-    color: #355070;
-  }
-
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    color: #355070;
-  }
-
-  td {
-    padding-top: 200px; 
-    width: 50%;
-  }
-  
-  tr {
-    padding-bottom: 200px;
-  }
-
-  .contact {
-    background-color: #355070;
-    color: white;
-    font-size: 25px;
-    padding: 50px;
-    text-align:center;
-    font-weight:lighter;
-    border-top:#50627f solid 60px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  table {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 250px;
-  } 
-
-  @font-face {
-    font-family: myFirstFont;
-    src: url(CANDY___.otf);
-  }
-
-  @font-face {
-    font-family: titleFont;
-    src: url(KLINOM__.TTF);
-  }
-
-  .topnav {
-    overflow: hidden;
-    background-color: #c3cad3;
-  }
-
-  .topnav a {
-    float: left;
-    color: #355070;
-    text-align: center;
-    padding: 16px 70px 16px 70px;
-    text-decoration: none;
-    font-size: 50px;
-  }
-
-  .topnav a:hover {
-    background-color: #dde3ec;
-    color: #77859c;
-  }
-
-  .topnav a.active {
-    background-color: #d0d4da;
-    color: #50627f;
-  }
-
-  .topnav a.active:hover {
-    background-color: #dde3ec;
-    color: #77859c;
-  }
-
-  .profile div {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .imgL {
-    position: relative;
-    display: block;
-    width: 400px;
-    box-shadow: -30px -30px 0 #355070;
-    border: 5px;
-    border-color: #CACFD6;
-    border-style: solid;
-    margin-left: 200px;
-    float: left;
-    clear: both;
-  }
-
-  .imgR {
-    position: relative;
-    display: block;
-    width: 400px;
-    box-shadow: 30px -30px 0 #355070;
-    border-width: 5px;
-    border-color: #CACFD6;
-    margin-right: 200px;
-    border-style: solid;
-    float: right;
-    clear: both;
-  }
-
-  .pL {
-    margin-left: 200px;
-    font-weight: bold;
-    text-align: left;
-  }
-
-  .pR {
-    margin-right: 200px;
-    font-weight: bold;
-    text-align: left;
-  }
-
-  p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    padding: 0;
-  }
-</style>
