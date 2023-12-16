@@ -7,23 +7,239 @@ class Carousel {
     this.carouselData = [
       {
         'id': '1',
-        'src': 'http://fakeimg.pl/300/?text=1',
+        'src': 'amber draft-1.png',
       },
       {
         'id': '2',
-        'src': 'http://fakeimg.pl/300/?text=2',
+        'src': 'Amber1.JPG',
       },
       {
         'id': '3',
-        'src': 'http://fakeimg.pl/300/?text=3',
+        'src': 'Amber2.PNG',
       },
       {
         'id': '4',
-        'src': 'http://fakeimg.pl/300/?text=4',
+        'src': 'Amber3.PNG',
       },
       {
         'id': '5',
-        'src': 'http://fakeimg.pl/300/?text=5',
+        'src': 'Ardwyn.PNG',
+      },
+      {
+        'id': '6',
+        'src': 'Aspen1.PNG',
+      },
+      {
+        'id': '7',
+        'src': 'Blaze1.PNG',
+      },
+      {
+        'id': '8',
+        'src': 'blink train-1.png',
+      },
+      {
+        'id': '9',
+        'src': 'Bri.JPG',
+      },
+      {
+        'id': '10',
+        'src': 'Cece.JPG',
+      },
+      {
+        'id': '11',
+        'src': 'Cleo1.PNG',
+      },
+      {
+        'id': '12',
+        'src': 'ezzy sketch that never got finished (1)-1.png',
+      },
+      {
+        'id': '13',
+        'src': 'Faye1.PNG',
+      },
+      {
+        'id': '14',
+        'src': 'Felicity1.PNG',
+      },
+      {
+        'id': '15',
+        'src': 'Gwen1.PNG',
+      },
+      {
+        'id': '16',
+        'src': 'Gwen2.PNG',
+      },
+      {
+        'id': '17',
+        'src': 'Harmonials_.png',
+      },
+      {
+        'id': '18',
+        'src': 'Harper1.JPG',
+      },
+      {
+        'id': '19',
+        'src': 'Harper2.PNG',
+      },
+      {
+        'id': '20',
+        'src': 'Harper3.PNG',
+      },
+      {
+        'id': '21',
+        'src': 'isla zorin head of guard sketch-1.png',
+      },
+      {
+        'id': '22',
+        'src': 'June1.PNG',
+      },
+      {
+        'id': '23',
+        'src': 'June2.PNG',
+      },
+      {
+        'id': '24',
+        'src': 'juniper and liana-1.png',
+      },
+      {
+        'id': '25',
+        'src': 'juniper and liana-2.png',
+      },
+      {
+        'id': '26',
+        'src': 'liana progression concept-1.png',
+      },
+      {
+        'id': '27',
+        'src': 'Liana1.JPEG',
+      },
+      {
+        'id': '28',
+        'src': 'Liana2.PNG',
+      },
+      {
+        'id': '29',
+        'src': 'Liana3.PNG',
+      },
+      {
+        'id': '30',
+        'src': 'Liana4.JPG',
+      },
+      {
+        'id': '31',
+        'src': 'Liana5.JPG',
+      },
+      {
+        'id': '32',
+        'src': 'more whp sorta world stuff-1.png',
+      },
+      {
+        'id': '33',
+        'src': 'old aspen and felicity draft ref body-1.png',
+      },
+      {
+        'id': '34',
+        'src': 'old sabel-1.png',
+      },
+      {
+        'id': '35',
+        'src': 'oldversion.JPG',
+      },
+      {
+        'id': '36',
+        'src': 'Osiris.PNG',
+      },
+      {
+        'id': '37',
+        'src': 'pegasus2.PNG',
+      },
+      {
+        'id': '38',
+        'src': 'sortaLiana.png',
+      },
+      {
+        'id': '39',
+        'src': 'symbol1.PNG',
+      },
+      {
+        'id': '40',
+        'src': 'symbol2.PNG',
+      },
+      {
+        'id': '41',
+        'src': 'symbol3.PNG',
+      },
+      {
+        'id': '42',
+        'src': 'whp stuff-1.png',
+      },
+      {
+        'id': '43',
+        'src': 'whp v1 😬-1.png',
+      },
+      {
+        'id': '44',
+        'src': 'whp v1-1.png',
+      },
+      {
+        'id': '45',
+        'src': 'whp worldbuilding stuffs-01.png',
+      },
+      {
+        'id': '46',
+        'src': 'whp worldbuilding stuffs-07.png',
+      },
+      {
+        'id': '47',
+        'src': 'whp worldbuilding stuffs-08.png',
+      },
+      {
+        'id': '48',
+        'src': 'whp worldbuilding stuffs-09.png',
+      },
+      {
+        'id': '49',
+        'src': 'whp worldbuilding stuffs-10.png',
+      },
+      {
+        'id': '50',
+        'src': 'whp worldbuilding stuffs-11.png',
+      },
+      {
+        'id': '51',
+        'src': 'whp worldbuilding stuffs-12.png',
+      },
+      {
+        'id': '52',
+        'src': 'whp worldbuilding stuffs-14.png',
+      },
+      {
+        'id': '53',
+        'src': 'whp worldbuilding stuffs-16.png',
+      },
+      {
+        'id': '54',
+        'src': 'whp worldbuilding stuffs-17.png',
+      },
+      {
+        'id': '55',
+        'src': 'whp worldbuilding stuffs-18.png',
+      },
+      {
+        'id': '56',
+        'src': 'whp worldbuilding stuffs-19.png',
+      },
+      {
+        'id': '57',
+        'src': 'whpoldish.PNG',
+      },
+      {
+        'id': '58',
+        'src': 'wings.PNG',
+      },
+      {
+        'id': '59',
+        'src': 'with her blurred lines-1.png',
       }
     ];
     this.carouselInView = [1, 2, 3, 4, 5];
@@ -60,20 +276,22 @@ class Carousel {
     });
 
     this.carouselOptions.forEach((option) => {
-      const btn = document.createElement('button');
-      const axSpan = document.createElement('span');
-
-      // Add accessibilty spans to button
-      axSpan.innerText = option;
-      axSpan.className = 'ax-hidden';
-      btn.append(axSpan);
-
-      // Add button attributes
-      btn.className = `carousel-control carousel-control-${option}`;
-      btn.setAttribute('data-name', option);
-
-      // Add carousel control options
-      controls.append(btn);
+      if (option != 'add') {
+        const btn = document.createElement('button');
+        const axSpan = document.createElement('span');
+  
+        // Add accessibilty spans to button
+        axSpan.innerText = option;
+        axSpan.className = 'ax-hidden';
+        btn.append(axSpan);
+  
+        // Add button attributes
+        btn.className = `carousel-control carousel-control-${option}`;
+        btn.setAttribute('data-name', option);
+  
+        // Add carousel control options
+        controls.append(btn);
+      }
     });
 
     // After rendering carousel to our DOM, setup carousel controls' event listeners
@@ -97,7 +315,7 @@ class Carousel {
   controlManager(control) {
     if (control === 'previous') return this.previous();
     if (control === 'next') return this.next();
-    if (control === 'add') return this.add();
+   /* if (control === 'add') return this.add();*/
     if (control === 'play') return this.play();
 
     return;
@@ -139,7 +357,7 @@ class Carousel {
     });
   }
 
-  add() {
+  /* add() {
     const newItem = {
       'id': '',
       'src': '',
@@ -158,7 +376,7 @@ class Carousel {
 
     // Shift carousel to display new item
     this.next();
-  }
+  } */
 
   play() {
     const playBtn = document.querySelector('.carousel-control-play');
@@ -191,3 +409,5 @@ const el = document.querySelector('.carousel');
 const exampleCarousel = new Carousel(el);
 // Setup carousel and methods
 exampleCarousel.mounted();
+
+//el: whp drafts

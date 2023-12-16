@@ -8,9 +8,11 @@
 .carousel {
   --carousel-height: 400px;
   --carousel-width: 1000px;
-  --carousel-item-height: 150px;
+  --carousel-item-height: 200px;
   --carousel-item-width: 150px;
-
+  background-color: #355070;
+  padding-top: 150px;
+  padding-bottom: 100px;
   width: 100%;
 }
 
@@ -172,7 +174,7 @@
   width: 6px;
 }
 
-/* add button */
+/* add button */ /*
 .carousel-control-add::after,
 .carousel-control-add::before {
   background: currentColor;
@@ -191,4 +193,4 @@
   left: 8px;
   top: 4px;
   width: 2px;
-}
+} */
