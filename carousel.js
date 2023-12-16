@@ -43,7 +43,7 @@ class Carousel {
       },
       {
         'id': '10',
-        'src': 'Cece.JPG',
+        'src': 'cece.JPG',
       },
       {
         'id': '11',
