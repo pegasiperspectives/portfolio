@@ -171,6 +171,9 @@ class Carousel {
 // Refers to the carousel root element you want to target, use specific class selectors if using multiple carousels
 const whp = document.querySelector('.carousel');
 const dd = document.querySelector('.carousel2');
+const wd = document.querySelector('.carousel3');
+const wb = document.querySelector('.carousel4');
+const fl = document.querySelector('.carousel5');
 // Create a new carousel object
 
 let carousel1 = [
@@ -413,6 +416,10 @@ let carousel1 = [
   {
     'id': '60',
     'src': 'hand.PNG',
+  },
+  {
+    'id': '61',
+    'src': 'Miri1.PNG',
   }
 ];
 
@@ -783,15 +790,474 @@ let carousel2 =  [{
   'id': '90',
   'src': 'business.png',
 },
+{
+  'id': '91',
+  'src': 'darrowsiblings.JPG',
+},
 ];
 
 const carousel2n = new Carousel(dd, carousel2);
 carousel2n.setupCarousel();
 
+let carousel3 =  [
+{
+  'id': '1',
+  'src': 'Amelia-(WD).PNG',
+},
+{
+  'id': '2',
+  'src': 'Auggie-(WD).PNG',
+},
+{
+  'id': '3',
+  'src': 'Clare-(WD).PNG',
+},
+{
+  'id': '4',
+  'src': 'Edith-(WD).PNG',
+},
+{
+  'id': '5',
+  'src': 'Ending_(WD).png',
+},
+{
+  'id': '6',
+  'src': 'Everett-(WD).PNG',
+},
+{
+  'id': '7',
+  'src': 'Laurence-(WD).PNG',
+},
+{
+  'id': '8',
+  'src': 'Lottie-(WD).PNG',
+},
+{
+  'id': '9',
+  'src': 'Peren-(WD).PNG',
+},
+{
+  'id': '10',
+  'src': 'whoopsiedaisiesposter.PNG',
+},
+{
+  'id': '11',
+  'src': 'whoopsie daisies concept game-1.PNG',
+},
+{
+  'id': '12',
+  'src': 'thanksforplayingbetter.PNG',
+},
+];
 
+const carousel3n = new Carousel(wd, carousel3);
+carousel3n.setupCarousel();
+
+let carousel4 =  [
+  {
+    'id': '1',
+    'src': 'base1.jpg',
+  },
+  {
+    'id': '2',
+    'src': 'base2.jpg',
+  },
+  {
+    'id': '3',
+    'src': 'base3.jpg',
+  },
+  {
+    'id': '4',
+    'src': 'base4.jpg',
+  },
+  {
+    'id': '5',
+    'src': 'base5.jpg',
+  },
+  {
+    'id': '6',
+    'src': 'base6.jpg',
+  },
+  {
+    'id': '7',
+    'src': 'base7.jpg',
+  },
+  {
+    'id': '8',
+    'src': 'basea-1.PNG',
+  },
+  {
+    'id': '9',
+    'src': 'basea-2.PNG',
+  },
+  {
+    'id': '10',
+    'src': 'basea-3.PNG',
+  },
+  {
+    'id': '11',
+    'src': 'basea-4.PNG',
+  },
+  {
+    'id': '12',
+    'src': 'basea-5.PNG',
+  },
+  {
+    'id': '13',
+    'src': 'basea-6.PNG',
+  },
+  {
+    'id': '14',
+    'src': 'basea-7.PNG',
+  },
+  {
+    'id': '15',
+    'src': 'basea-8.PNG',
+  },
+  {
+    'id': '16',
+    'src': 'basea-9.PNG',
+  },
+  {
+    'id': '17',
+    'src': 'basea-10.PNG',
+  },
+  {
+    'id': '18',
+    'src': 'basea-11.PNG',
+  },
+  {
+    'id': '19',
+    'src': 'basea-12.PNG',
+  },
+  {
+    'id': '20',
+    'src': 'character maker-1.png',
+  },
+  {
+    'id': '21',
+    'src': 'characterLayout.JPG',
+  },
+  {
+    'id': '22',
+    'src': 'charactermakermockup.png',
+  },
+  {
+    'id': '23',
+    'src': 'ears.png',
+  },
+  {
+    'id': '24',
+    'src': 'ears1.jpg',
+  },
+  {
+    'id': '25',
+    'src': 'ears2.jpg',
+  },
+  {
+    'id': '26',
+    'src': 'eyes.jpg',
+  },
+  {
+    'id': '27',
+    'src': 'eyeseyebrows.png',
+  },
+  {
+    'id': '28',
+    'src': 'headshapes.png',
+  },
+  {
+    'id': '29',
+    'src': 'hair1.png',
+  },
+  {
+    'id': '30',
+    'src': 'hair2.png',
+  },
+  {
+    'id': '31',
+    'src': 'hair3.png',
+  },
+  {
+    'id': '32',
+    'src': 'hair4.png',
+  },
+  {
+    'id': '33',
+    'src': 'hats.png',
+  },
+  {
+    'id': '34',
+    'src': 'horns1.jpg',
+  },
+  {
+    'id': '35',
+    'src': 'humanlegs.png',
+  },
+  {
+    'id': '36',
+    'src': 'humannoses.png',
+  },
+  {
+    'id': '37',
+    'src': 'jackets1.png',
+  },
+  {
+    'id': '38',
+    'src': 'jackets2.png',
+  },
+  {
+    'id': '39',
+    'src': 'jackets3.png',
+  },
+  {
+    'id': '40',
+    'src': 'jackets4.png',
+  },
+  {
+    'id': '41',
+    'src': 'jackets5.png',
+  },
+  {
+    'id': '42',
+    'src': 'jackets6.png',
+  },
+  {
+    'id': '43',
+    'src': 'jackets7.png',
+  },
+  {
+    'id': '44',
+    'src': 'jewelry1.png',
+  },
+  {
+    'id': '45',
+    'src': 'jewelry2.png',
+  },
+  {
+    'id': '46',
+    'src': 'jewelry3.png',
+  },
+  {
+    'id': '47',
+    'src': 'jewelry4.png',
+  },
+  {
+    'id': '48',
+    'src': 'jewelry5.png',
+  },
+  {
+    'id': '49',
+    'src': 'jewelry6.png',
+  },
+  {
+    'id': '50',
+    'src': 'legs1.jpg',
+  },
+  {
+    'id': '51',
+    'src': 'legs2.jpg',
+  },
+  {
+    'id': '52',
+    'src': 'legs3.jpg',
+  },
+  {
+    'id': '53',
+    'src': 'mouths.png',
+  },
+  {
+    'id': '54',
+    'src': 'nose1.jpg',
+  },
+  {
+    'id': '55',
+    'src': 'overalls1.png',
+  },
+  {
+    'id': '56',
+    'src': 'pants1.png',
+  },
+  {
+    'id': '57',
+    'src': 'pants2.png',
+  },
+  {
+    'id': '58',
+    'src': 'pants3.png',
+  },
+  {
+    'id': '59',
+    'src': 'pattern1.jpg',
+  },
+  {
+    'id': '60',
+    'src': 'pattern2.jpg',
+  },
+  {
+    'id': '61',
+    'src': 'pattern3.jpg',
+  },
+  {
+    'id': '62',
+    'src': 'shells1.jpg',
+  },
+  {
+    'id': '63',
+    'src': 'shirts1.png',
+  },
+  {
+    'id': '64',
+    'src': 'shirts2.png',
+  },
+  {
+    'id': '65',
+    'src': 'shirts3.png',
+  },
+  {
+    'id': '66',
+    'src': 'shirts4.png',
+  },
+  {
+    'id': '67',
+    'src': 'shirts5.png',
+  },
+  {
+    'id': '68',
+    'src': 'shirts6.png',
+  },
+  {
+    'id': '69',
+    'src': 'shirts7.png',
+  },
+  {
+    'id': '70',
+    'src': 'shirts8.png',
+  },
+  {
+    'id': '71',
+    'src': 'shirts9.png',
+  },
+  {
+    'id': '72',
+    'src': 'shirts10.png',
+  },
+  {
+    'id': '73',
+    'src': 'shirts11.png',
+  },
+  {
+    'id': '74',
+    'src': 'shirts12.png',
+  },
+  {
+    'id': '75',
+    'src': 'shoes.png',
+  },
+  {
+    'id': '76',
+    'src': 'skirts1.png',
+  },
+  {
+    'id': '77',
+    'src': 'skirts2.png',
+  },
+  {
+    'id': '78',
+    'src': 'sleeves1.png',
+  },
+  {
+    'id': '79',
+    'src': 'sleeves2.png',
+  },
+  {
+    'id': '80',
+    'src': 'tails1.jpg',
+  },
+  {
+    'id': '81',
+    'src': 'tails2.jpg',
+  },
+  {
+    'id': '82',
+    'src': 'torso.png',
+  },
+  {
+    'id': '83',
+    'src': 'hands.png',
+  },
+];
+
+const carousel4n = new Carousel(wb, carousel4);
+carousel4n.setupCarousel();
+
+let carousel5 =  [
+  {
+    'id': '1',
+    'src': 'finishlimebackground.gif',
+  },
+  {
+    'id': '2',
+    'src': 'Lemon_Cart.PNG',
+  },
+  {
+    'id': '3',
+    'src': 'Luelle_.PNG',
+  },
+  {
+    'id': '4',
+    'src': 'suriaubreysketch.png',
+  },
+  {
+    'id': '5',
+    'src': 'lemoncap.PNG',
+  },
+  {
+    'id': '6',
+    'src': 'Untitled_Artwork (1).PNG',
+  },
+  {
+    'id': '7',
+    'src': 'Untitled_Artwork (3).PNG',
+  },
+  {
+    'id': '8',
+    'src': 'Untitled_Artwork (4).PNG',
+  },
+  {
+    'id': '9',
+    'src': 'Untitled_Artwork (2).PNG',
+  },
+  {
+    'id': '10',
+    'src': 'Lemon_Shield.PNG',
+  },
+  {
+    'id': '11',
+    'src': 'Power_up_1 (2).PNG',
+  },
+  {
+    'id': '12',
+    'src': 'Power_up_1 (1).PNG',
+  },
+  {
+    'id': '13',
+    'src': 'Power_up_1.PNG',
+  },
+  {
+    'id': '14',
+    'src': 'rock.PNG',
+  },
+];
+
+const carousel5n = new Carousel(fl, carousel5);
+carousel5n.setupCarousel();
 
 // Setup carousel and methods
 
 
 //whp: whp drafts
 //dd: decent doodles
+//wd: whoopsie daisies
+//wb: worldbuild
+//fl: finish lime

@@ -5,7 +5,7 @@
 }
 
 /* carousel styles */
-.carousel, .carousel2 {
+.carousel {
   --carousel-height: 400px;
   --carousel-width: 1000px;
   --carousel-item-height: 200px;
