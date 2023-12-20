@@ -444,7 +444,7 @@ let carousel2 =  [{
 },
 {
   'id': '5',
-  'src': 'arm.png',
+  'src': 'strawberrygirldoodle.png',
 },
 {
   'id': '6',
@@ -544,7 +544,7 @@ let carousel2 =  [{
 },
 {
   'id': '30',
-  'src': 'girl2.png',
+  'src': 'girl2.PNG',
 },
 {
   'id': '31',
@@ -752,7 +752,7 @@ let carousel2 =  [{
 },
 {
   'id': '82',
-  'src': 'vanellopesketch.PNG',
+  'src': 'vanellopesketch.png',
 },
 {
   'id': '83',
@@ -764,7 +764,7 @@ let carousel2 =  [{
 },
 {
   'id': '85',
-  'src': 'witchdoodle.PNG',
+  'src': 'witchdoodle.png',
 },
 {
   'id': '86',
@@ -793,6 +793,10 @@ let carousel2 =  [{
 {
   'id': '91',
   'src': 'darrowsiblings.JPG',
+},
+{
+  'id': '92',
+  'src': 'meee.PNG',
 },
 ];
 
@@ -842,11 +846,15 @@ let carousel3 =  [
 },
 {
   'id': '11',
-  'src': 'whoopsie daisies concept game-1.PNG',
+  'src': 'whoopsie daisies concept game-1.png',
 },
 {
   'id': '12',
   'src': 'thanksforplayingbetter.PNG',
+},
+{
+  'id': '13',
+  'src': 'map.JPG',
 },
 ];
 
@@ -1185,6 +1193,18 @@ let carousel4 =  [
   {
     'id': '83',
     'src': 'hands.png',
+  },
+  {
+    'id': '84',
+    'src': 'arm.png',
+  },
+  {
+    'id': '85',
+    'src': 'shapes.png',
+  },
+  {
+    'id': '86',
+    'src': 'worldbuildlogo.PNG',
   },
 ];
 
