@@ -97,7 +97,7 @@ class Carousel {
 
     // Using the first 5 items in data array update content of carousel items in view
     this.carouselData.slice(0, 5).forEach((data, index) => {
-      document.querySelector(`.carousel-item-${index + 1}`).src = data.src;
+      this.el.querySelector(`.carousel-item-${index + 1}`).src = data.src;
     });
   }
 
@@ -409,6 +409,10 @@ let carousel1 = [
   {
     'id': '59',
     'src': 'with her blurred lines-1.png',
+  },
+  {
+    'id': '60',
+    'src': 'hand.PNG',
   }
 ];
 
@@ -434,7 +438,352 @@ let carousel2 =  [{
 {
   'id': '5',
   'src': 'arm.png',
-}];
+},
+{
+  'id': '6',
+  'src': 'art perspective project-1.png',
+},
+{
+  'id': '7',
+  'src': 'autumn-1.png',
+},
+{
+  'id': '8',
+  'src': 'awe.JPG',
+},
+{
+  'id': '9',
+  'src': 'birdiee-1.png',
+},
+{
+  'id': '10',
+  'src': 'bluewingmagazine.jpg',
+},
+{
+  'id': '11',
+  'src': 'break.png',
+},
+{
+  'id': '12',
+  'src': 'classroom.JPEG',
+},
+{
+  'id': '13',
+  'src': 'cloudy soars spark-1.png',
+},
+{
+  'id': '14',
+  'src': 'dogdoodle.png',
+},
+{
+  'id': '15',
+  'src': 'doggo-1.png',
+},
+{
+  'id': '16',
+  'src': 'dogish.JPG',
+},
+{
+  'id': '17',
+  'src': 'doodles.JPG',
+},
+{
+  'id': '18',
+  'src': 'doryarmy.png',
+},
+{
+  'id': '19',
+  'src': 'elsaa!!-1.png',
+},
+{
+  'id': '20',
+  'src': 'emoji maker-1.png',
+},
+{
+  'id': '21',
+  'src': 'fall.jpg',
+},
+{
+  'id': '22',
+  'src': 'famous painting redo I think…-1.png',
+},
+{
+  'id': '23',
+  'src': 'fishie.png',
+},
+{
+  'id': '24',
+  'src': 'fishies.JPG',
+},
+{
+  'id': '25',
+  'src': 'fox1.JPG',
+},
+{
+  'id': '26',
+  'src': 'fox2.jpg',
+},
+{
+  'id': '27',
+  'src': 'fox3.JPG',
+},
+{
+  'id': '28',
+  'src': 'froggyplanet.heic',
+},
+{
+  'id': '29',
+  'src': 'girl1.PNG',
+},
+{
+  'id': '30',
+  'src': 'girl2.png',
+},
+{
+  'id': '31',
+  'src': 'grants1.png',
+},
+{
+  'id': '32',
+  'src': 'grants2.png',
+},
+{
+  'id': '33',
+  'src': 'hair sketch-1.png',
+},
+{
+  'id': '34',
+  'src': 'Indigo.PNG',
+},
+{
+  'id': '35',
+  'src': 'heart from elementary school-1.png',
+},
+{
+  'id': '36',
+  'src': 'hill-1.png',
+},
+{
+  'id': '37',
+  'src': 'holdhands.JPEG',
+},
+{
+  'id': '38',
+  'src': 'horsey.JPG',
+},
+{
+  'id': '39',
+  'src': 'house.jpg',
+},
+{
+  'id': '40',
+  'src': 'house2.jpg',
+},
+{
+  'id': '41',
+  'src': 'house3.jpg',
+},
+{
+  'id': '42',
+  'src': 'house4.jpg',
+},
+{
+  'id': '43',
+  'src': 'jewishclassroomsketch.png',
+},
+{
+  'id': '44',
+  'src': 'Kai_s_Cats.png',
+},
+{
+  'id': '45',
+  'src': 'key to the locket-1.png',
+},
+{
+  'id': '46',
+  'src': 'kid multidimensional sketch-1.png',
+},
+{
+  'id': '47',
+  'src': 'know.png',
+},
+{
+  'id': '48',
+  'src': 'lollipop rain girl comic-1.png',
+},
+{
+  'id': '49',
+  'src': 'me from 7th grade I think-1.png',
+},
+{
+  'id': '50',
+  'src': 'mosaic doodle-1.png',
+},
+{
+  'id': '51',
+  'src': 'mrs. _ her grandbaby.png',
+},
+{
+  'id': '52',
+  'src': 'moreplant.png',
+},
+{
+  'id': '53',
+  'src': 'Mrs._Doneghy_s_Pic.png',
+},
+{
+  'id': '54',
+  'src': 'mushrooms.JPEG',
+},
+{
+  'id': '55',
+  'src': 'no doubt logos-1.png',
+},
+{
+  'id': '56',
+  'src': 'nodoubtlogo.PNG',
+},
+{
+  'id': '57',
+  'src': 'pandashirt.jpg',
+},
+{
+  'id': '58',
+  'src': 'pear.JPEG',
+},
+{
+  'id': '59',
+  'src': 'penguin and owl-1.png',
+},
+{
+  'id': '60',
+  'src': 'plant1.png',
+},
+{
+  'id': '61',
+  'src': 'plant2.png',
+},
+{
+  'id': '62',
+  'src': 'plantchalk.png',
+},
+{
+  'id': '63',
+  'src': 'pumpkin.JPG',
+},
+{
+  'id': '64',
+  'src': 'rainbowdoodle.png',
+},
+{
+  'id': '65',
+  'src': 'rainbowflowers.jpg',
+},
+{
+  'id': '66',
+  'src': 'rainbowplant.JPG',
+},
+{
+  'id': '67',
+  'src': 'reallybadlorrainethatneedstogetredrawn.png',
+},
+{
+  'id': '68',
+  'src': 'Remi.PNG',
+},
+{
+  'id': '69',
+  'src': 'rift.JPG',
+},
+{
+  'id': '70',
+  'src': 'sea.jpg',
+},
+{
+  'id': '71',
+  'src': 'self portrait art-1.png',
+},
+{
+  'id': '72',
+  'src': 'sisss.PNG',
+},
+{
+  'id': '73',
+  'src': 'Sisterly_Love.png',
+},
+{
+  'id': '74',
+  'src': 'squares.png',
+},
+{
+  'id': '75',
+  'src': 'Stephenson_s_Dog.png',
+},
+{
+  'id': '76',
+  'src': 'superbabies.png',
+},
+{
+  'id': '77',
+  'src': 'tulsi witch-1.png',
+},
+{
+  'id': '78',
+  'src': 'treee-1.png',
+},
+{
+  'id': '79',
+  'src': 'uh oh weird dimensions and aliens!-1.png',
+},
+{
+  'id': '80',
+  'src': 'typewriter.PNG',
+},
+{
+  'id': '81',
+  'src': 'Untitled-Artwork.PNG',
+},
+{
+  'id': '82',
+  'src': 'vanellopesketch.PNG',
+},
+{
+  'id': '83',
+  'src': 'vanellope character designing-1.png',
+},
+{
+  'id': '84',
+  'src': 'wateringcan.PNG',
+},
+{
+  'id': '85',
+  'src': 'witchdoodle.PNG',
+},
+{
+  'id': '86',
+  'src': 'wooooo-1.png',
+},
+{
+  'id': '87',
+  'src': 'camile.jpg',
+},
+{
+  'id': '88',
+  'src': 'camp everwood-1.png',
+},
+{
+  'id': '89',
+  'src': 'Bubblegum-Rose.PNG',
+},
+{
+  'id': '90',
+  'src': 'Buddy___Sammy.png',
+},
+{
+  'id': '90',
+  'src': 'business.png',
+},
+];
 
 const carousel2n = new Carousel(dd, carousel2);
 carousel2n.setupCarousel();
