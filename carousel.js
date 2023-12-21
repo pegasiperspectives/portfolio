@@ -870,6 +870,114 @@ let carousel2 =  [{
   'id': '92',
   'src': 'meee.PNG',
 },
+{
+  'id': '93',
+  'src': 'dedo1.jpg',
+},
+{
+  'id': '94',
+  'src': 'dedo2.jpg',
+},
+{
+  'id': '95',
+  'src': 'dedo3.jpg',
+},
+{
+  'id': '96',
+  'src': 'dedo4.jpg',
+},
+{
+  'id': '97',
+  'src': 'dedo5.jpg',
+},
+{
+  'id': '98',
+  'src': 'dedo6.jpg',
+},
+{
+  'id': '99',
+  'src': 'dedo7.jpg',
+},
+{
+  'id': '100',
+  'src': 'dedo8.PNG',
+},
+{
+  'id': '101',
+  'src': 'dedo9.jpg',
+},
+{
+  'id': '102',
+  'src': 'invis1.PNG',
+},
+{
+  'id': '103',
+  'src': 'invis2.PNG',
+},
+{
+  'id': '104',
+  'src': 'invis3.PNG',
+},
+{
+  'id': '105',
+  'src': 'invis4.PNG',
+},
+{
+  'id': '106',
+  'src': 'invis5.GIF',
+},
+{
+  'id': '107',
+  'src': 'invis6.PNG',
+},
+{
+  'id': '108',
+  'src': 'invis7.jpg',
+},
+{
+  'id': '109',
+  'src': 'invis8.jpg',
+},
+{
+  'id': '110',
+  'src': 'invis9.jpg',
+},
+{
+  'id': '111',
+  'src': 'ghost1.jpg',
+},
+{
+  'id': '112',
+  'src': 'ghost2.jpg',
+},
+{
+  'id': '113',
+  'src': 'gigi and bepa.jpg',
+},
+{
+  'id': '114',
+  'src': '_Mom_Spot_The_Difference 1.PNG',
+},
+{
+  'id': '115',
+  'src': '_Mom_Spot_The_Difference.PNG',
+},
+{
+  'id': '116',
+  'src': 'aura.PNG',
+},
+{
+  'id': '117',
+  'src': 'growth.PNG',
+},
+{
+  'id': '118',
+  'src': 'no doubt.PNG',
+},
+{
+  'id': '119',
+  'src': 'Tay_.PNG',
+},
 ];
 
 const carousel2n = new Carousel(dd, carousel2);
@@ -1278,6 +1386,422 @@ let carousel4 =  [
     'id': '86',
     'src': 'worldbuildlogo.PNG',
   },
+  {
+    'id': '87',
+    'src': 'Left_Eyebrows-1.PNG',
+  },
+  {
+    'id': '88',
+    'src': 'Left_Eyebrows-2.PNG',
+  },
+  {
+    'id': '89',
+    'src': 'Left_Eyebrows-3.PNG',
+  },
+  {
+    'id': '90',
+    'src': 'Left_Eyebrows-4.PNG',
+  },
+  {
+    'id': '91',
+    'src': 'Left_Eyebrows-5.PNG',
+  },
+  {
+    'id': '92',
+    'src': 'Left_Eyebrows-6.PNG',
+  },
+  {
+    'id': '93',
+    'src': 'Left_Eyebrows-7.PNG',
+  },
+  {
+    'id': '94',
+    'src': 'Left_Eyebrows-8.PNG',
+  },
+  {
+    'id': '95',
+    'src': 'Left_Eyebrows-9.PNG',
+  },
+  {
+    'id': '96',
+    'src': 'Right_Eyebrows-1.PNG',
+  },
+  {
+    'id': '97',
+    'src': 'Right_Eyebrows-2.PNG',
+  },
+  {
+    'id': '98',
+    'src': 'Right_Eyebrows-3.PNG',
+  },
+  {
+    'id': '99',
+    'src': 'Right_Eyebrows-4.PNG',
+  },
+  {
+    'id': '100',
+    'src': 'Right_Eyebrows-5.PNG',
+  },
+  {
+    'id': '101',
+    'src': 'Right_Eyebrows-6.PNG',
+  },
+  {
+    'id': '102',
+    'src': 'Right_Eyebrows-7.PNG',
+  },
+  {
+    'id': '103',
+    'src': 'Right_Eyebrows-8.PNG',
+  },
+  {
+    'id': '104',
+    'src': 'Right_Eyebrows-9.PNG',
+  },
+  {
+    'id': '105',
+    'src': 'Right_Eyebrows.PNG',
+  },
+  {
+    'id': '106',
+    'src': 'Face_Shape-1.PNG',
+  },
+  {
+    'id': '107',
+    'src': 'Face_Shape-2.PNG',
+  },
+  {
+    'id': '108',
+    'src': 'Face_Shape-3.PNG',
+  },
+  {
+    'id': '109',
+    'src': 'Face_Shape-4.PNG',
+  },
+  {
+    'id': '110',
+    'src': 'Face_Shape-5.PNG',
+  },
+  {
+    'id': '111',
+    'src': 'Face_Shape-9.PNG',
+  },
+  {
+    'id': '112',
+    'src': 'Face_Shape-7.PNG',
+  },
+  {
+    'id': '113',
+    'src': 'Face_Shape-8.PNG',
+  },
+  {
+    'id': '114',
+    'src': 'Face_Shape-6.PNG',
+  },
+  {
+    'id': '115',
+    'src': 'Noses.PNG',
+  },
+  {
+    'id': '116',
+    'src': 'Right_Ears-1.PNG',
+  },
+  {
+    'id': '117',
+    'src': 'Right_Ears-2.PNG',
+  },
+  {
+    'id': '118',
+    'src': 'Right_Ears-3.PNG',
+  },
+  {
+    'id': '119',
+    'src': 'Right_Ears-4.PNG',
+  },
+  {
+    'id': '120',
+    'src': 'Right_Ears-5.PNG',
+  },
+  {
+    'id': '121',
+    'src': 'Right_Ears-6.PNG',
+  },
+  {
+    'id': '122',
+    'src': 'Right_Ears-7.PNG',
+  },
+  {
+    'id': '123',
+    'src': 'Right_Ears-8.PNG',
+  },
+  {
+    'id': '124',
+    'src': 'Right_Ears-9.PNG',
+  },
+  {
+    'id': '125',
+    'src': 'Left_Ears-1.PNG',
+  },
+  {
+    'id': '126',
+    'src': 'Left_Ears-2.PNG',
+  },
+  {
+    'id': '127',
+    'src': 'Left_Ears-3.PNG',
+  },
+  {
+    'id': '128',
+    'src': 'Left_Ears-4.PNG',
+  },
+  {
+    'id': '129',
+    'src': 'Left_Ears-5.PNG',
+  },
+  {
+    'id': '130',
+    'src': 'Left_Ears-6.PNG',
+  },
+  {
+    'id': '131',
+    'src': 'Left_Ears-7.PNG',
+  },
+  {
+    'id': '132',
+    'src': 'Left_Ears-8.PNG',
+  },
+  {
+    'id': '133',
+    'src': 'Left_Ears-9.PNG',
+  },
+  {
+    'id': '134',
+    'src': 'Noses-2.PNG',
+  },
+  {
+    'id': '135',
+    'src': 'Noses-3.PNG',
+  },
+  {
+    'id': '136',
+    'src': 'Noses-4.PNG',
+  },
+  {
+    'id': '137',
+    'src': 'Noses-5.PNG',
+  },
+  {
+    'id': '138',
+    'src': 'Noses-6.PNG',
+  },
+  {
+    'id': '139',
+    'src': 'Noses-7.PNG',
+  },
+  {
+    'id': '140',
+    'src': 'Noses-8.PNG',
+  },
+  {
+    'id': '141',
+    'src': 'Noses-9.PNG',
+  },
+  {
+    'id': '142',
+    'src': 'Bangs_-1.PNG',
+  },
+  {
+    'id': '143',
+    'src': 'Bangs_-2.PNG',
+  },
+  {
+    'id': '144',
+    'src': 'Bangs_-3.PNG',
+  },
+  {
+    'id': '145',
+    'src': 'Bangs_-4.PNG',
+  },
+  {
+    'id': '146',
+    'src': 'Bangs_-5.PNG',
+  },
+  {
+    'id': '147',
+    'src': 'Bangs_-6.PNG',
+  },
+  {
+    'id': '148',
+    'src': 'Bangs_-7.PNG',
+  },
+  {
+    'id': '149',
+    'src': 'Bangs_-8.PNG',
+  },
+  {
+    'id': '150',
+    'src': 'Bangs_-9.PNG',
+  },
+  {
+    'id': '151',
+    'src': 'Hair-1.PNG',
+  },
+  {
+    'id': '152',
+    'src': 'Hair-2.PNG',
+  },
+  {
+    'id': '153',
+    'src': 'Hair-3.PNG',
+  },
+  {
+    'id': '154',
+    'src': 'Hair-4.PNG',
+  },
+  {
+    'id': '155',
+    'src': 'Hair-5.PNG',
+  },
+  {
+    'id': '156',
+    'src': 'Hair-6.PNG',
+  },
+  {
+    'id': '157',
+    'src': 'Hair-7.PNG',
+  },
+  {
+    'id': '158',
+    'src': 'Hair-8.PNG',
+  },
+  {
+    'id': '159',
+    'src': 'Hair-9.PNG',
+  },
+  {
+    'id': '160',
+    'src': 'Mouths-1.PNG',
+  },
+  {
+    'id': '161',
+    'src': 'Mouths-2.PNG',
+  },
+  {
+    'id': '162',
+    'src': 'Mouths-3.PNG',
+  },
+  {
+    'id': '163',
+    'src': 'Mouths-4.PNG',
+  },
+  {
+    'id': '164',
+    'src': 'Mouths-5.PNG',
+  },
+  {
+    'id': '165',
+    'src': 'Mouths-6.PNG',
+  },
+  {
+    'id': '166',
+    'src': 'Mouths-7.PNG',
+  },
+  {
+    'id': '167',
+    'src': 'Mouths-8.PNG',
+  },
+  {
+    'id': '168',
+    'src': 'Mouths-9.PNG',
+  },
+  {
+    'id': '169',
+    'src': 'Left_Eyes-1.PNG',
+  },
+  {
+    'id': '170',
+    'src': 'Left_Eyes-2.PNG',
+  },
+  {
+    'id': '172',
+    'src': 'Left_Eyes-3.PNG',
+  },
+  {
+    'id': '173',
+    'src': 'Left_Eyes-4.PNG',
+  },
+  {
+    'id': '174',
+    'src': 'Left_Eyes-5.PNG',
+  },
+  {
+    'id': '175',
+    'src': 'Left_Eyes-6.PNG',
+  },
+  {
+    'id': '176',
+    'src': 'Left_Eyes-7.PNG',
+  },
+  {
+    'id': '177',
+    'src': 'Left_Eyes-8.PNG',
+  },
+  {
+    'id': '178',
+    'src': 'Left_Eyes-9.PNG',
+  },
+  {
+    'id': '179',
+    'src': 'Right_Eyes-1.PNG',
+  },
+  {
+    'id': '180',
+    'src': 'Right_Eyes-2.PNG',
+  },
+  {
+    'id': '181',
+    'src': 'Right_Eyes-3.PNG',
+  },
+  {
+    'id': '182',
+    'src': 'Right_Eyes-4.PNG',
+  },
+  {
+    'id': '183',
+    'src': 'Right_Eyes-5.PNG',
+  },
+  {
+    'id': '184',
+    'src': 'Right_Eyes-6.PNG',
+  },
+  {
+    'id': '185',
+    'src': 'Right_Eyes-7.PNG',
+  },
+  {
+    'id': '186',
+    'src': 'Right_Eyes-8.PNG',
+  },
+  {
+    'id': '187',
+    'src': 'Right_Eyes-9.PNG',
+  },
+  {
+    'id': '188',
+    'src': 'arms.jpg',
+  },
+  {
+    'id': '189',
+    'src': 'left arrow.PNG',
+  },
+  {
+    'id': '190',
+    'src': 'right arrow.PNG',
+  },
+  {
+    'id': '190',
+    'src': 'shapes.jpg',
+  },
 ];
 
 const carousel4n = new Carousel(wb, carousel4);
@@ -1339,6 +1863,10 @@ let carousel5 =  [
   {
     'id': '14',
     'src': 'rock.PNG',
+  },
+  {
+    'id': '15',
+    'src': 'fl titlescreen.PNG',
   },
 ];
 
