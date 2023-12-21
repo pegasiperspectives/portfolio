@@ -420,7 +420,79 @@ let carousel1 = [
   {
     'id': '61',
     'src': 'Miri1.PNG',
-  }
+  },
+  {
+    'id': '62',
+    'src': 'lic.jpg',
+  },
+  {
+    'id': '63',
+    'src': 'muralwhpsketch.jpg',
+  },
+  {
+    'id': '64',
+    'src': 'whp pets.jpg',
+  },
+  {
+    'id': '65',
+    'src': 'bedroomsketch.jpg',
+  },
+  {
+    'id': '66',
+    'src': 'june sketch.jpg',
+  },
+  {
+    'id': '67',
+    'src': 'whblsketch.jpg',
+  },
+  {
+    'id': '68',
+    'src': 'ardwyn1.jpg',
+  },
+  {
+    'id': '69',
+    'src': 'ardwyn2.jpg',
+  },
+  {
+    'id': '70',
+    'src': 'ardwyn3.jpg',
+  },
+  {
+    'id': '71',
+    'src': 'ardwyn4.jpg',
+  },
+  {
+    'id': '72',
+    'src': 'ardwyn5.jpg',
+  },
+  {
+    'id': '73',
+    'src': 'ardwyn6.jpg',
+  },
+  {
+    'id': '74',
+    'src': 'ardwyn7.jpg',
+  },
+  {
+    'id': '75',
+    'src': 'ardwyn8.jpg',
+  },
+  {
+    'id': '76',
+    'src': 'ardwyn9.jpg',
+  },
+  {
+    'id': '77',
+    'src': 'mtainsley.jpg',
+  },
+  {
+    'id': '78',
+    'src': 'june3.jpg',
+  },
+  {
+    'id': '79',
+    'src': 'Juniper_Blythe.PNG',
+  },
 ];
 
 const exampleCarousel = new Carousel(whp, carousel1);
