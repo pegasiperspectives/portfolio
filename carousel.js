@@ -493,6 +493,10 @@ let carousel1 = [
     'id': '79',
     'src': 'Juniper_Blythe.PNG',
   },
+  {
+    'id': '80',
+    'src': 'gwenandbri.png',
+  }
 ];
 
 const exampleCarousel = new Carousel(whp, carousel1);
@@ -978,6 +982,18 @@ let carousel2 =  [{
   'id': '119',
   'src': 'Tay_.PNG',
 },
+{
+'id': '120',
+'src': 'profile pic.png',
+},
+{
+  'id': '121',
+  'src': '0.png',
+},
+{
+  'id': '122',
+  'src': '1.png',
+}
 ];
 
 const carousel2n = new Carousel(dd, carousel2);
