@@ -174,6 +174,7 @@ const dd = document.querySelector('.carousel2');
 const wd = document.querySelector('.carousel3');
 const wb = document.querySelector('.carousel4');
 const fl = document.querySelector('.carousel5');
+const wd2 = document.querySelector('.carousel6');
 // Create a new carousel object
 
 let carousel1 = [
@@ -498,9 +499,6 @@ let carousel1 = [
     'src': 'gwenandbri.png',
   }
 ];
-
-const exampleCarousel = new Carousel(whp, carousel1);
-exampleCarousel.setupCarousel();
 
 let carousel2 =  [{
   'id': '1',
@@ -996,8 +994,6 @@ let carousel2 =  [{
 }
 ];
 
-const carousel2n = new Carousel(dd, carousel2);
-carousel2n.setupCarousel();
 
 let carousel3 =  [
 {
@@ -1054,8 +1050,61 @@ let carousel3 =  [
 },
 ];
 
-const carousel3n = new Carousel(wd, carousel3);
-carousel3n.setupCarousel();
+let carousel6 =  [
+  {
+    'id': '1',
+    'src': 'Amelia-(WD).PNG',
+  },
+  {
+    'id': '2',
+    'src': 'Auggie-(WD).PNG',
+  },
+  {
+    'id': '3',
+    'src': 'Clare-(WD).PNG',
+  },
+  {
+    'id': '4',
+    'src': 'Edith-(WD).PNG',
+  },
+  {
+    'id': '5',
+    'src': 'Ending_(WD).png',
+  },
+  {
+    'id': '6',
+    'src': 'Everett-(WD).PNG',
+  },
+  {
+    'id': '7',
+    'src': 'Laurence-(WD).PNG',
+  },
+  {
+    'id': '8',
+    'src': 'Lottie-(WD).PNG',
+  },
+  {
+    'id': '9',
+    'src': 'Peren-(WD).PNG',
+  },
+  {
+    'id': '10',
+    'src': 'whoopsiedaisiesposter.PNG',
+  },
+  {
+    'id': '11',
+    'src': 'whoopsie daisies concept game-1.png',
+  },
+  {
+    'id': '12',
+    'src': 'thanksforplayingbetter.PNG',
+  },
+  {
+    'id': '13',
+    'src': 'map.JPG',
+  },
+  ];
+  
 
 let carousel4 =  [
   {
@@ -1820,8 +1869,6 @@ let carousel4 =  [
   },
 ];
 
-const carousel4n = new Carousel(wb, carousel4);
-carousel4n.setupCarousel();
 
 let carousel5 =  [
   {
@@ -1886,6 +1933,15 @@ let carousel5 =  [
   },
 ];
 
+const carousel4n = new Carousel(wb, carousel4);
+carousel4n.setupCarousel();
+console.log("whp: " + wd2)
+const exampleCarousel = new Carousel(whp, carousel1);
+exampleCarousel.setupCarousel();
+const carousel2n = new Carousel(dd, carousel2);
+carousel2n.setupCarousel();
+const carousel3n = new Carousel(wd, carousel3);
+carousel3n.setupCarousel();
 const carousel5n = new Carousel(fl, carousel5);
 carousel5n.setupCarousel();
 

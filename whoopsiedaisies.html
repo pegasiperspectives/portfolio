@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+    <link rel="stylesheet" href="carousel.css">
     <title>Whoopsie Daisies</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
 </head>
 
 <body>
@@ -33,6 +37,25 @@
             </td>
         </tr>
 
+        <tr>
+            <td>
+                <div style="padding-bottom: 100px;"></div>
+                <div class="carousel carousel3"></div>
+            </td>
+        </tr>
+
+        <div class = "two">
+            <div style="padding-top: 200px;"></div>
+            <div class="carousel carousel"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel4"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel5"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel2"></div>
+            <div style="padding-bottom: 100px;"></div>
+        </div>
+
      <!-- <tr>
             <td>
                 <div class="column2" style="text-align:left">
@@ -51,38 +74,27 @@
 
     </table>
 
-
-    <div style="padding-top: 100px;"></div>
-
-    <div class="row">
-
-        <div class="column">
-            <img src="whoopsiedaisiesposter.PNG" style="width:100%">
-            <img src="Edith-(WD).PNG" style="width:100%">
-            <img src="Laurence-(WD).PNG" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="Amelia-(WD).PNG" style="width:100%">
-            <img src="Lottie-(WD).PNG" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="Auggie-(WD).PNG" style="width:100%">
-            <img src="Ending_(WD).png" style="width:100%">
-            <img src="Peren-(WD).PNG" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="Clare-(WD).PNG" style="width:100%">
-            <img src="Everett-(WD).PNG" style="width:100%">
-            <img src="thanksforplayingbetter.PNG" style="width:100%">
-        </div>
-
-    </div>
-
 </body>
-
+<script src="carousel.js">//https://www.cssscript.com/flip-element-carousel/
+    //MIT License Copyright (c) 2022 Benjamin Kim
+  
+  /* Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE. */</script>
 </html>
 <style>
      * {
@@ -109,10 +121,10 @@
     }
 
     table {
-        /* border-width: 10px;
-         border-color: #355070;  */
+         border-width: 10px;
+         border-color: #355070;  
         width: 100%;
-    }
+    } 
 
     h4.underlay {
         width: 100%;
@@ -128,13 +140,14 @@
 
     
 
-    /** why does it have the weird thing on the bottom and how do I add a border... also, I'm pretty sure my padding
-    on all of this is messed up, I may need some help fixing that so that my border goes around the video and not its padding **/
+    /* why does it have the weird thing on the bottom and how do I add a border... also, I'm pretty sure my padding
+    on all of this is messed up, I may need some help fixing that so that my border goes around the video and not its padding */
    video {
     position: absolute;
     top: 50%;
     left: 25%;
     z-index: 1;
+    opacity: 75%;
 } 
 
 
@@ -152,9 +165,15 @@
         src: url(Bought\ Something\ Regular\ TTF.ttf);
     }
 
+    topnav {
+        z-index: 9999;
+    }
+
     .topnav {
         overflow: hidden;
         background-color: #c3cad3;
+        position: relative; /* fixes overlap problem with nav bar!!!! */
+        z-index: 2;
     }
 
     .topnav a {
@@ -164,21 +183,25 @@
         padding: 16px 70px 16px 70px;
         text-decoration: none;
         font-size: 50px;
+        z-index: 2;
     }
 
     .topnav a:hover {
         background-color: #dde3ec;
         color: #77859c;
+        z-index: 2;
     }
 
     .topnav a.active {
         background-color: #d0d4da;
         color: #50627f;
+        z-index: 2;
     }
 
     .topnav a.active:hover {
         background-color: #dde3ec;
         color: #77859c;
+        z-index: 2;
     }
 
     p {
@@ -311,5 +334,6 @@
             flex: 100%;
             max-width: 100%;
         }
-    }
+    } 
 </style>
+    

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
-    <title>WorldBuild</title>
+    <link rel="stylesheet" href="carousel.css">
+    <title>Worldbuild</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
 </head>
 
 <body>
@@ -17,20 +21,43 @@
         <a href="realtime.html"> ~real time~ </a>
     </div>
 
-    <div style="padding-top: 150px;"></div>
 
-    <!--- very much a first draft, unedited, and needs a LOT of work ha.... also why can't I say worldbuild with the first l?! -->
-    <video width="800" height="500" controls>
-        <source src="worldbuildpitchtakeone.mp4"
-            type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <table>
+        <tr class="pitchTitle" style="background-color: #355070;">
+         <!--- very much a first draft, unedited, and needs a LOT of work ha.... also why can't I say worldbuild with the first l?! -->
+        <video width="800" height="500" controls>
+            <source src="worldbuildpitchtakeone.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <td>
+                <h4 class="underlay">
+                    P I T C H
+                </h4>
+            </td>
+        </tr>
 
-    <div style="padding-top: 250px;"></div>
+        <tr>
+            <td>
+                <div style="padding-bottom: 100px;"></div>
+                <div class="carousel carousel4"></div>
+            </td>
+        </tr>
 
-    <div class="row">
+        <div class = "two">
+            <div style="padding-top: 200px;"></div>
+            <div class="carousel carousel"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel3"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel5"></div>
+            <div style="padding-bottom: 100px;"></div>
+            <div class="carousel carousel2"></div>
+            <div style="padding-bottom: 100px;"></div>
+        </div>
 
-        <div class="column2" style="text-align:left">
+     <!-- <tr>
+            <div class="column2" style="text-align:left">
             <button><a href="outfit.html" style="text-align: left">Random Outfit Generator</a></button>
         </div>
 
@@ -50,42 +77,33 @@
         <div class="column2" style="text-align:left">
             <button><a href="animals.html" style="text-align: left">Random Animal Generator</a></button>
         </div>
-    
-    </div>
+        </tr> -->
 
-    </div>
 
-    <div style="padding-top: 100px;"></div>
 
-    <div class="row">
-
-        <div class="column">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-        </div>
-
-        <div class="column">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-            <img src="" style="width:100%">
-        </div>
-
-    </div>
+    </table>
 
 </body>
-
+<script src="carousel.js">//https://www.cssscript.com/flip-element-carousel/
+    //MIT License Copyright (c) 2022 Benjamin Kim
+  
+  /* Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE. */</script>
 </html>
 <style>
      * {
@@ -93,7 +111,7 @@
     } 
     
     body {
-        background-color: CACFD6;
+        background-color: #CACFD6;
         width: 100%;
         height: 175%;
         margin: 0;
@@ -101,13 +119,46 @@
         background-color: #CACFD6;
     }
 
-    /** why does it have the weird thing on the bottom and how do I add a border... also, I'm pretty sure my padding
-    on all of this is messed up, I may need some help fixing that so that my border goes around the video and not its padding **/
-    video {
-        margin: auto;
-        text-align: center;
-        display: block;
+    tr.pitchTitle {
+        border-color: #355070;
+        border-width: 10px;
+        border-style: solid;
+        height: 400px;
+        width: 100vw;
+        background-color: #355070;
+        vertical-align: center;
     }
+
+    table {
+         border-width: 10px;
+         border-color: #355070;  
+        width: 100%;
+    } 
+
+    h4.underlay {
+        width: 100%;
+        text-align: center;
+        font-family: pitchFont;
+        opacity: 0.3;
+        color: white;
+        font-size: 17vw;
+        z-index: 0;
+        display: inline-block;
+        transform: scaleY(2.5);
+    }
+
+    
+
+    /* why does it have the weird thing on the bottom and how do I add a border... also, I'm pretty sure my padding
+    on all of this is messed up, I may need some help fixing that so that my border goes around the video and not its padding */
+   video {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 1;
+    opacity: 75%;
+} 
+
 
     h1 {
         color: black;
@@ -118,9 +169,20 @@
         src: url(CANDY___.otf);
     }
 
+    @font-face {
+        font-family: pitchFont;
+        src: url(Bought\ Something\ Regular\ TTF.ttf);
+    }
+
+    topnav {
+        z-index: 9999;
+    }
+
     .topnav {
         overflow: hidden;
         background-color: #c3cad3;
+        position: relative; /* fixes overlap problem with nav bar!!!! */
+        z-index: 2;
     }
 
     .topnav a {
@@ -130,21 +192,25 @@
         padding: 16px 70px 16px 70px;
         text-decoration: none;
         font-size: 50px;
+        z-index: 2;
     }
 
     .topnav a:hover {
         background-color: #dde3ec;
         color: #77859c;
+        z-index: 2;
     }
 
     .topnav a.active {
         background-color: #d0d4da;
         color: #50627f;
+        z-index: 2;
     }
 
     .topnav a.active:hover {
         background-color: #dde3ec;
         color: #77859c;
+        z-index: 2;
     }
 
     p {
@@ -201,13 +267,13 @@
     .column a {
         text-decoration: none;
         list-style-type: none;
-        color: #355070;
+        color: black;
         justify-content: left;
         margin: 0;
     }
 
     .column a:visited {
-        color: #838475;
+        color: gray;
         margin: 0;
     }
 
@@ -218,13 +284,13 @@
     .column2 a {
         text-decoration: none;
         list-style-type: none;
-        color: #355070;
+        color: #355070;;
         justify-content: left;
         margin: 0;
     }
 
     .column2 a:visited {
-        color: #838475;
+        color: #576551;
         margin: 0;
     }
 
@@ -277,5 +343,5 @@
             flex: 100%;
             max-width: 100%;
         }
-    }
+    } 
 </style>
