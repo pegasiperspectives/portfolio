@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +43,7 @@
                 <div style="padding-bottom: 100px;"></div>
                 <div class="carousel carousel3"></div>
             </td>
-        </tr>
+       
 
         <div class = "two">
             <div style="padding-top: 200px;"></div>
@@ -55,24 +56,37 @@
             <div class="carousel carousel2"></div>
             <div style="padding-bottom: 100px;"></div>
         </div>
+    </tr>
 
-     <!-- <tr>
-            <td>
-                <div class="column2" style="text-align:left">
-                    <button><a href="Whoopsie Daisies CYOA (1).html" style="text-align: left">Whoopsie Daisies Game</a></button>
-                </div>  
-            </td>
+</table>
 
-            <td rowspan="2">
-                <div class="column2" style="text-align:left">
-                    <button><a href="WhoopsieDaisiesTwineFinishedd.html" style="text-align: left">Choose Your Own Story Game</a></button>
-                </div>
-            </td>
-        </tr> -->
+<div style="padding-bottom: 100px;"></div>
 
+<table class="pad" style="background-color: #355070;">
 
+    <tr>
+        <td>
+            <div style="text-align:left">
+                <button><a href="Whoopsie Daisies CYOA (1).html" style="text-align: left">Whoopsie Daisies Game</a></button>
+            </div>  
+        </td>
+    </tr>
 
-    </table>
+ </table>
+
+ <div style="padding-bottom: 100px;"></div>
+
+ <table class="pad" style="background-color: #355070;">
+
+    <tr>
+        <td>
+            <div style="text-align:left">
+                <button><a href="WhoopsieDaisiesTwineFinishedd.html" style="text-align: left">Choose Your Own Story Game</a></button>
+            </div>
+        </td>  
+    </tr>
+
+</table>
 
 </body>
 <script src="carousel.js">//https://www.cssscript.com/flip-element-carousel/
@@ -137,8 +151,6 @@
         display: inline-block;
         transform: scaleY(2.5);
     }
-
-    
 
     /* why does it have the weird thing on the bottom and how do I add a border... also, I'm pretty sure my padding
     on all of this is messed up, I may need some help fixing that so that my border goes around the video and not its padding */
@@ -208,43 +220,12 @@
         font-size: 30px;
     }
 
-    .row {
-        display: -ms-flexbox;
-        /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap;
-        /* IE10 */
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: left;
-    }
-
-    /* Create four equal columns that sits next to each other */
-    .column {
-        -ms-flex: 25%;
-        /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 20px 20px 20px 20px;
-        text-align: left;
-    }
-
-    .column2 {
-        -ms-flex: 50%;
-        /* IE10 */
-        flex: 50%;
-        max-width: 50%;
-        padding: 20px 20px 20px 20px;
-        text-align: left;
-    }
-
     img {
         position: relative;
         display: block;
         float: left;
         padding-top: 40px;
     }
-
 
     button {
         background-color: transparent;
@@ -255,85 +236,24 @@
         width: 100%;
     }
 
-    .column a {
-        text-decoration: none;
-        list-style-type: none;
-        color: black;
-        justify-content: left;
-        margin: 0;
-    }
-
-    .column a:visited {
-        color: gray;
-        margin: 0;
-    }
-
-    .column a:hover {
-        color: #77859c;
-    }
-
-    .column2 a {
-        text-decoration: none;
-        list-style-type: none;
-        color: #355070;;
-        justify-content: left;
-        margin: 0;
-    }
-
-    .column2 a:visited {
-        color: #576551;
-        margin: 0;
-    }
-
-    .column2 a:hover {
-        color: #77859c;
-    }
-
-    .row.dropdown {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .dropdown-content {
-        display: none;
-        font-size: 20px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: #77859c;
-        z-index: 1;
-        margin: 0;
-    }
-
-    .row:hover .dropdown-content {
-        display: inline;
-    }
-
     @font-face {
         font-family: titleFont;
         src: url(Mineblox-0WoAX.ttf);
     }
 
-    .column img {
-        margin-top: 20px;
-        vertical-align: middle;
-        width: 100%;
+    .pad td {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #355070;
     }
 
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-        .column {
-            -ms-flex: 50%;
-            flex: 50%;
-            max-width: 50%;
-        }
+    .pad a {
+        color: #CACFD6;
+        text-decoration: none;
     }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column {
-            -ms-flex: 100%;
-            flex: 100%;
-            max-width: 100%;
-        }
-    } 
+    .pad a:hover {
+        color: gray;
+    }
 </style>
     
